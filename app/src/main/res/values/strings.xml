@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MvvmDemo</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="token">BETvXZ7cCPPSlYG5QS2ezk-Pj7aymrM5a2qGfHt3_iWgJzgTx68CL_eTWWw44CJCV3ej2L2g3duK69qNgPs_e-E</string>
+    <string name="default_notification_channel_id">help</string>
+    <string name="fcm_message">Hello</string>
+
+
+</resources>
