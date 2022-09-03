@@ -105,14 +105,18 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("FirebaseToken", "onComplete: "+task.getResult());
             }
         });
+
+        binding.btnFragment.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, TabActivity.class);
+            startActivity(intent);
+        });
+
+        binding.btnMap.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MapActivity.class);
+            startActivity(intent);
+        });
     }
 
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//            AppSession.getInstance(MainActivity.this).setValue(Constant.IS_USER_LOGIN, "true");
-//            startActivity(new Intent(MainActivity.this, LoginActivity.class));
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

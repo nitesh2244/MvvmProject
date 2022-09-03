@@ -7,6 +7,11 @@ import android.net.Uri;
 import android.provider.OpenableColumns;
 import android.util.Log;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.mvvmdemo.R;
 import com.example.mvvmdemo.auth.model.CommonStatusMessageResponse;
 import com.example.mvvmdemo.auth.view.MainActivity;
 import com.google.gson.Gson;
@@ -120,4 +125,16 @@ public class AppUtils {
         return serverHandling;
 
     }
+
+    public static void addFragmentBackStack(FragmentManager fragmentManager, Fragment fragment, String tag , boolean isAddToBackStack) {
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+          fragmentTransaction.add(R.id.flFragment, fragment);
+        if (isAddToBackStack) {
+            fragmentTransaction.addToBackStack(tag);
+        }
+        fragmentTransaction.commit();
+    }
+
+
+
 }

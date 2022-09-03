@@ -83,6 +83,26 @@
             android:layout_marginTop="20dp"
             android:textAllCaps="false"
             android:text="UploadImage" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_fragment"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:text="Fragment" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_map"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:text="Google map" />
     </LinearLayout>
 
 </layout>
